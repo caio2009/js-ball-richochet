@@ -10,8 +10,8 @@ const loop = (board, ball) => {
     ball.x += cosByDeg(ball.angle)
     ball.y += sinByDeg(ball.angle)
   } else {
-    board.nextDirectionTo(ball)
-    ball.nextAngle()
+    board.changeDirection(ball)
+    ball.changeAngle()
 
     ball.x += cosByDeg(ball.angle)
     ball.y += sinByDeg(ball.angle)
@@ -24,7 +24,7 @@ const loop = (board, ball) => {
 
 const app = () => {
   const board = new Board(256, 256)
-  const ball = new Ball(0, 0, 8)
+  const ball = new Ball(Math.floor(Math.random() * (256 - 16)), Math.floor(Math.random() * (256 - 16)), 8)
 
   // initial draw
   draw(board, ball)

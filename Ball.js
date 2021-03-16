@@ -46,7 +46,7 @@ class Ball {
   //   func()
   // }
 
-  nextAngle() {
+  changeAngle() {
     const funcs = {
       [directions.RIGHT_DOWN]: () => this.angle = randomAngle(),
       [directions.RIGHT_UP]: () => this.angle = 360 - randomAngle(),

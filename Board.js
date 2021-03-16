@@ -41,7 +41,7 @@ class Board {
     return false
   }
 
-  nextDirectionTo(ball) {
+  changeDirection(ball) {
     const funcs = {
       [directions.RIGHT_DOWN]: () => {
         ball.direction = ball.x > ball.y ? directions.LEFT_DOWN : directions.RIGHT_UP
