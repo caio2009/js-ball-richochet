@@ -6,13 +6,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>DVD</title>
+  <title>Ball Richochet</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    #container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      height: 100vh;
+    }
+  </style>
   
+  <script src="utils.js"></script>
+  <script src="colors.js"></script>
+  <script src="Board.js"></script>
+  <script src="Ball.js"></script>
   <script src="app.js"></script>
 </head>
 
 <body>
-  <canvas id="board" width="256" height="256" />
+  <div id='container'></div>
 </body>
 
 </html>
